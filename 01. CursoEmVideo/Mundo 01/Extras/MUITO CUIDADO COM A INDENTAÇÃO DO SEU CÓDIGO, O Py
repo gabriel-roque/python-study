@@ -1,0 +1,87 @@
+MUITO CUIDADO COM A INDENTAÇÃO DO SEU CÓDIGO, O Python NÃO ACEITA COMO O DE OUTRAS LINGUAGENS
+
+Uma váriavel passa a ser declarada apenas depois que é dado um valor para ela
+
+Convites = 10L -> Para criar um número do tipo longet
+Salario = 7500.0J -> 
+String -> Pode ser declarada usando aspas duplas ou aspas simples, fica a seu criterio 
+*Você pode cortar e pegar apenas alguns pedassos dessa string, usando o [0:15]
+    >O 0 representa o inicio
+    >O 15 representa o final dessa String
+
+Exemplo {
+    convite = 1
+    idade     = 20
+    nome     = Anderson
+
+    "O nome do " + nome + "esta no convite por ele ter " + idade 
+        >Isso vai dar um erro porque o Python não compila numero com string
+
+    print O nome do %s esta no convite por ele ter %s % (nome, idade)
+        >Esse vai dar certo porque ele ira substituir os "%s" por cada variavel dentro do parentesse
+        >Deve ser colocado na ordem em que ele vai substituir
+}
+#Array#
+
+*Uma array pode guarda junto com ela tanto strings quanto inteiros ou decimais
+Convites = ["Anderson", "ANdrade", "Silva"]
+Convites [0] -> Ele vai devolver a saida da posição escolhida
+    >Sendo 0 para primeira e assim em diante
+Convites [0:] -> Ele vai pegar da posição escolhida em diante
+Convites.append ("Vitor") -> Isso faz com que essa string seja armazenada na ultima posição do array
+
+Convites.remove ("vitor") -> Isso faz com que seja removido aquele nome de dentro da array
+
+    #tuple#
+    *tuple são arrays que não podem ser adicionados mais itens dentro dela, ela devolverar uma mensagem de erro
+        >Para criar uma tuple é da mesma forma que uma array só que usando parentesses
+        >convites = ("Anderson", "ANdrade", "Silva")
+            > E não pode ser adicionado mais nada dentro dessa lista
+        > O modo de acesso para as informações colocadas dentro dessa lista são da mesma forma da array
+
+    #Dictionary#
+    *Com eles podemos criar uma array que tem uma chave de acesso e para ela usamos as chaves {}
+    Convites_Valor = {"vip" : 60, "normal" : 80, "Cortesia" : 0 }
+        >As palavras entre aspas são as chaves dos valores (No caso os números)
+        >Para acessar o valor da array basta usar a sua key
+            >Convites_Valor [vip] -> Vai lhe devolver o valor 60, por ser o valor daquela key
+        >Para saber quais keys se tem em um Dictionary Você pode usar o comnado
+            >Convites_Valor.keys () -> Vai lhe devolver todas as keys que estão dentro dessa array
+        >Para saber quais os valores que você tem na sua array use o comando
+            >Convites_Valor.values () -> Vai lhe devolver todos os valores de dentro daquela array
+#Funções#
+
+    Para sabermos quantos caracteres tem em uma string podemos usar o comando
+        >nome da variavel = len (nome da váriavel que vai ser verificada)
+
+def -> Serve para definir uma função
+    > def Gerar_nome():
+
+        pass
+
+**Para importarmos uma biblioteca do Python para dentro do console, precisamos apenas de um comando simples 
+    > from nome do arquivo import *
+        >from biblioteca import *
+
+def Gerar_Nome (convite): -> isso significa que a função "Gerar_Nome" vai receber um parametro da variavel "convite"
+*Caso dentro dessa função usarmos o comando return ele devolvera uma informação que queremos de dentro da função
+
+*Para pegarmos uma informação do teclado usamos o comando raw_input()
+    >{
+        nome = raw_input()
+        nico -> Essa foi a informação digitada pelo usuário
+            >Ou seja a string que está guardada em nome é nico
+            >Lembre-se tudo que o usuário digitar sera como uma string mesmo que seja um número
+                >Para converter o valor que o usuário digitou basta ulitizar o comando do tipo
+                    {
+                    idade = raw_input()
+                    >>15
+                    2017 - idade -> ISso vai devolver um erro, porque não tem como tirar inteiro de string
+                        >idade = int(idade) -> Isso vai converter o valor de idade para inteiro em vez de deixar como String
+                    }
+
+
+    } 
+
+*Para digitar algo na tela execute o comando print
+    >O que estiver depois desse print vai aparecer na tela para o usuário

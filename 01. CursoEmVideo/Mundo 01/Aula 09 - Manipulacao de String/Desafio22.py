@@ -1,0 +1,7 @@
+nome = str(input('Insira seu Nome Completo: '))
+print(nome.upper())
+print(nome.lower())
+dividido = nome.split()
+TotLetras = ''.join(dividido)
+print('A string `{}` possue {} letras'.format(nome, len(TotLetras)))
+print('O primeiro nome possue {} letras'.format(len(dividido[0])))

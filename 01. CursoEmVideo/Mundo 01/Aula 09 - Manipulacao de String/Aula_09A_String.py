@@ -1,0 +1,13 @@
+nome = str('Gabriel Roque de Miranda Silva')
+#sendo que os espaco contam como caracteres
+print('A string {} possue {} caracteres '.format(nome, (len(nome))))
+print('Na string {} o caractere `a` aparece {} vez(es)'.format(nome, nome.count('a')))
+print('O caractere `b` na string {} se encontra na posicao {} '.format(nome, nome.find('b')))
+print('A string Roque se encontra na variavel nome?', 'Roque' in nome)
+print('Substiuir Silva por Rosa ->>', nome.replace('Silva','Rosa'))
+print('A string tudo em MAIUSCULA ->>', nome.upper())
+print('A string tudo em minuscula ->>', nome.lower())
+print('Apenas a primeira string em Maiuscula ->>', nome.capitalize())
+print('Toda string comeca com uma Maiuscula ->>', nome.title())
+print('A string dividida ->>', nome.split())
+print('A a string unida ->>', " ".join(nome))
